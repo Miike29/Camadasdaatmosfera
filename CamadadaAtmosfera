@@ -1,0 +1,13 @@
+function determinar_camada(altitude) {
+  if (altitude <= 20) {
+    return "TROPOSFERA";
+  } else if (20 < altitude && altitude <= 50) {
+    return "ESTRATOSFERA";
+  } else if (50 < altitude && altitude <= 80) {
+    return "MESOSFERA";
+  } else if (80 < altitude && altitude <= 450) {
+    return "TERMOSFERA";
+  } else if (450 < altitude && altitude <= 900) {
+    return "EXOSFERA";
+  }
+}
